@@ -1,6 +1,14 @@
 # customize_terminal
--- Open your .bashrc and paste this you can customize your terminal
-
+Follow my steps and paste the code in your .bashrc file you can change your boring/static terminal into a dynamic terminal
+Step 1: change the zsh commandline into bash by
+ - chsh -s /bin/bash
+Step 2: open (or create) .bash_profile file and type command below and save it
+ -  export BASH_SILENCE_DEPRECATION_WARNING=1
+    if [ -f ~/.bashrc ]; then
+            source ~/.bashrc
+    fi
+Step 3: Open your .bashrc and paste this you can customize your terminal
+ 
 red=$(tput setaf 202);
 yellow=$(tput setaf 172);
 blue=$(tput setaf 86);
